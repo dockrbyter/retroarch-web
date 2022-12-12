@@ -1,7 +1,4 @@
-# Run RetroArch Web Player in a container
-#
-# docker run --rm -it -p 8080:80 inglebard/retroarch-web
-#
+
 FROM debian:bullseye
 
 LABEL maintainer "David 'Inglebard' RICQ <davidricq87@orange.fr>"
@@ -18,8 +15,6 @@ RUN apt-get update && apt-get install -y \
 	--no-install-recommends \
 	&& rm -rf /var/lib/apt/lists/*
 
-# https://github.com/libretro/RetroArch/tree/master/pkg/emscripten
-# https://buildbot.libretro.com/stable/
 ENV RETROARCH_VERSION 1.12.0
 ENV ROOT_WWW_PATH /var/www/html
 
