@@ -3,7 +3,8 @@
 [![Image Size](https://img.shields.io/docker/image-size/dockrbyter/retroarch-web.svg)](https://hub.docker.com/r/dockrbyter/retroarch-web)
 
 ## HOW TO ⚙️
-##### Open Firewall Ports:
+### FIREWALL
+Open Ports:
  - 80/TCP
 
 ### DOCKER RUN
@@ -12,7 +13,7 @@ docker run -d --rm --name retroarch-web -p 80:80 dockrbyter/retroarch-web:latest
 ```
 
 ### DOCKER COMPOSE
-#### Download DDOCKER COMPOSE FILE
+#### DOWNLOAD DOCKER COMPOSE FILE
 ```bash
 mkdir -p $HOME/retroarch-web
 cd $HOME/retroarch-web
