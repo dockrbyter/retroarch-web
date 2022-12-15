@@ -24,6 +24,9 @@ curl https://raw.githubusercontent.com/dockrbyter/retroarch-web/master/docker-co
 docker-compose up -d
 ```
 
-##### Origin
+##### REPO
+Github: https://github.com/dockrbyter/retroarch-web  
+DockerHub: https://hub.docker.com/r/dockrbyter/retroarch-web
+##### ORIGIN
 Based on https://github.com/libretro/RetroArch/tree/master/pkg/emscripten,  
 forked from https://github.com/Inglebard/dockerfiles  
