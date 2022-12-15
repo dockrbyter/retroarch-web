@@ -1,36 +1,29 @@
+# Retroarch-Web
+[![Docker Pulls](https://img.shields.io/docker/pulls/dockrbyter/retroarch-web.svg)](https://hub.docker.com/r/dockrbyter/retroarch-web)
+[![Image Size](https://img.shields.io/docker/image-size/dockrbyter/retroarch-web.svg)](https://hub.docker.com/r/dockrbyter/retroarch-web)
 
-# Docker image inglebard/retroarch-web
-Self-hosted retroarch web player.
-[Github](https://github.com/Inglebard/dockerfiles/tree/retroarch-web/)
-[Dockerhub](https://hub.docker.com/r/inglebard/retroarch-web/)
+## HOW TO ⚙️
+##### Open Firewall Ports:
+ - 80/TCP
 
-## Why use this image :
-
-This image was created to have remote play to retro game.
-
-## Technical information :
-
-### Softwares :
-* nginx
-
-### Ports :
-* 80
-
-### Volumes :
-You may need to mount game folder
-
-## How to use this image :
-
-You can run this image like this:
-```
-docker run --rm -it -p 8080:80 inglebard/retroarch-web
-
+### DOCKER RUN
+```bash
+docker run -d --rm --name retroarch-web -p 80:80 dockrbyter/retroarch-web:latest
 ```
 
-## Thanks
-This image was created from
-* https://github.com/libretro/RetroArch/tree/master/pkg/emscripten
-=======
+### DOCKER COMPOSE
+#### Download DDOCKER COMPOSE FILE
+```bash
+mkdir -p $HOME/retroarch-web
+cd $HOME/retroarch-web
+curl https://raw.githubusercontent.com/dockrbyter/retroarch-web/master/docker-compose.yml docker-compose.yml
+```
 
-# retroarch web
+#### RUN DOCKER COMPOSE FILE
+```bash
+docker-compose up -d
+```
 
+##### Origin
+Based on https://github.com/libretro/RetroArch/tree/master/pkg/emscripten,  
+forked from https://github.com/Inglebard/dockerfiles  
