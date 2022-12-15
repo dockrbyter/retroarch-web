@@ -25,6 +25,9 @@ curl https://raw.githubusercontent.com/dockrbyter/retroarch-web/master/docker-co
 docker-compose up -d
 ```
 
+### LOAD ROMS
+After selecting Core, click Run. After RetroArch opens, click 'Add Content' and select your compatible ROM. Now click on 'Load Content', then 'Start Directory'. Here's your ROM, click on it, play it.
+
 ##### REPO
 Github: https://github.com/dockrbyter/retroarch-web  
 DockerHub: https://hub.docker.com/r/dockrbyter/retroarch-web
